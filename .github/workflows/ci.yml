@@ -30,6 +30,11 @@ jobs:
           npm install remark-cli remark-preset-lint-consistent
           npx remark . --use remark-preset-lint-consistent --frail
 
+      - uses: actions/uplad-arifact@v4
+        with: 
+          name: remark-lint-report
+          path: remark-lint-report.json
+
 
 
           
